@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博鱼体育 · 简明指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f4f7;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1e293b;
+      padding: 2rem 1rem;
+    }
+
+    .page-wrap {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    /* hero */
+    .hero {
+      background: #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+      padding: 3rem 2.5rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid #e9edf2;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      color: #0f172a;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #475569;
+      max-width: 600px;
+      margin: 0 auto 1rem auto;
+    }
+
+    .hero .badge {
+      display: inline-block;
+      background: #eef2f6;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      color: #334155;
+      border: 1px solid #dce1e8;
+    }
+
+    /* 通用卡片 */
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #e7ebf0;
+    }
+
+    .card h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      border-left: 4px solid #94a3b8;
+      padding-left: 1rem;
+      color: #0f172a;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 1.5rem 0 0.6rem 0;
+      color: #1e293b;
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin-top: 0.8rem;
+    }
+
+    .benefit-item {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 1.2rem 1.4rem;
+      border: 1px solid #e2e8f0;
+    }
+
+    .benefit-item strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-summary {
+      background: #f9fafb;
+      border-radius: 16px;
+      padding: 1.2rem 1.6rem;
+      border: 1px solid #e4e9ef;
+      margin-top: 1rem;
+    }
+
+    .faq-summary .q {
+      font-weight: 500;
+      margin-top: 0.8rem;
+    }
+
+    .faq-summary .q:first-of-type {
+      margin-top: 0;
+    }
+
+    .faq-summary .a {
+      color: #475569;
+      margin-bottom: 0.6rem;
+      padding-left: 0.4rem;
+    }
+
+    .tip-box {
+      background: #f1f5f9;
+      border-radius: 14px;
+      padding: 1.2rem 1.6rem;
+      border-left: 4px solid #64748b;
+      margin: 1.5rem 0 0.8rem 0;
+    }
+
+    .footer-note {
+      text-align: center;
+      padding: 2rem 0.5rem 0.5rem 0.5rem;
+      font-size: 0.9rem;
+      color: #64748b;
+      border-top: 1px solid #dce2ea;
+      margin-top: 0.8rem;
+    }
+
+    .footer-note a {
+      color: #1e293b;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #b0bccb;
+    }
+
+    .footer-note a:hover {
+      color: #0f172a;
+      border-bottom-color: #0f172a;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 40px;
+      padding: 0.5rem 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #1e293b;
+      transition: 0.2s;
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      background: #eef2f6;
+      border-color: #94a3b8;
+    }
+
+    /* 响应式 */
+    @media (max-width: 720px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        padding: 2rem 1.2rem;
+      }
+
+      .card {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .grid-2col {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem 0.75rem;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <!-- hero 区 -->
+    <section class="hero">
+      <h1>博鱼体育 · 简明指南</h1>
+      <p class="sub">从基本认知到顺畅使用，关于平台特性与访问提醒的快速参考。</p>
+      <span class="badge">面向日常使用者的知识型指引</span>
+    </section>
+
+    <!-- 优势区：两列卡片 -->
+    <section class="card">
+      <h2>平台特点速览</h2>
+      <div class="grid-2col">
+        <div class="benefit-item">
+          <strong>⚙️ 模块清晰</strong>
+          界面按运动类别、赛事状态、数据统计分区，信息层级直观，降低摸索成本。
+        </div>
+        <div class="benefit-item">
+          <strong>📊 数据整合</strong>
+          赛程、实时比分、历史记录聚合在同一视图下，便于快速比较和决策。
+        </div>
+        <div class="benefit-item">
+          <strong>🔒 账户安全</strong>
+          采用双重验证及会话管理机制，建议用户定期更新密码并绑定安全设备。
+        </div>
+        <div class="benefit-item">
+          <strong>🌐 多端适配</strong>
+          响应式布局覆盖桌面与移动端，核心操作流程在手机浏览器中同样顺畅。
+        </div>
+      </div>
+    </section>
+
+    <!-- 说明区：使用场景+简明提示 -->
+    <section class="card">
+      <h2>使用场景与注意事项</h2>
+      <p>无论是关注热门联赛的即时动态，还是回顾某一赛季的完整数据，平台都提供了可定制的筛选面板。建议新用户先浏览“帮助”模块下的术语说明，以便更准确地理解赔率变动与统计口径。</p>
+      <div class="tip-box">
+        <strong>🧭 访问提醒</strong> · 请始终通过官方域名 <a href="https://index-boyusport.com" style="color:#0f172a;text-decoration:underline;text-underline-offset:2px;">博鱼体育</a> 直接访问，避免使用第三方镜像或未经验证的跳转链接。如遇页面加载异常，可先检查网络环境或清除浏览器缓存。
+      </div>
+      <p>平台每日更新多个赛事的赛前分析与赛后复盘，内容由编辑团队整理，仅供参考。所有数据均以官方公布为准，用户应结合自身判断进行参考。</p>
+    </section>
+
+    <!-- FAQ 摘要区 -->
+    <section class="card">
+      <h2>常见问题摘要</h2>
+      <div class="faq-summary">
+        <div class="q">▸ 注册后必须立刻充值吗？</div>
+        <div class="a">不需要。注册后可先浏览免费板块（赛程、新闻、基础数据），确认界面与内容符合需求后再决定是否使用增值功能。</div>
+
+        <div class="q">▸ 为什么有时页面提示“正在维护”？</div>
+        <div class="a">平台会在每周二凌晨 03:00–05:00（UTC+8）进行例行维护，届时部分服务可能暂停。非维护时段如遇异常，建议稍后重试或联系客服。</div>
+
+        <div class="q">▸ 可否同时登录多个设备？</div>
+        <div class="a">同一账户允许在最多两台设备上保持会话，但若检测到异常多地登录，系统将自动冻结账户并发送通知。</div>
+
+        <div class="q">▸ 如何确认自己访问的是官方站点？</div>
+        <div class="a">认准域名 <strong>index-boyusport.com</strong>，并核对浏览器地址栏锁形图标（HTTPS 证书）。如发现网址与官方不一致，请立即退出并报告。</div>
+      </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <footer class="footer-note">
+      <p style="margin-bottom:0.4rem;">以上内容仅为信息介绍，不构成任何诱导或承诺。请以 <a href="https://index-boyusport.com">博鱼体育</a> 官方页面公布的最新规则为准。</p>
+      <p style="font-size:0.8rem; margin-top:0.6rem; opacity:0.7;">— 页面生成于独立指南，仅供参考 —</p>
+    </footer>
+  </div>
+</body>
+</html>
